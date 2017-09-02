@@ -3,16 +3,16 @@
 ## Objectives
 
 * Setup Create React App
-* Walk through setting up a small application
-* Explain how .env files work with Create React App
+* Walkthrough setting up a small application
+* Explain how .env files work within Create React App
 
 ## Introduction: 
 
-In the last lesson we built out a small client app using HTML and Vanilla JS, which was fun, but would take a lot of work to build a full scale app. Plus why did we learn all of this React and Redux stuff if we weren't going to use it. In this lesson, it is time to talk about one of the greatest tools in the React toolset __Create React App CLI__. 
+In the last lesson we built out a small client app using HTML and Vanilla JS, which was fun, but would take a lot of work to build a full scale app. Plus why did we learn all of this React and Redux stuff if we weren't going to use it? In this lesson, we are going to introduce on of the greatest tools in the React toolset __Create React App CLI__. 
 
 ## Create React App
 
-The Create React App cli tool is one of the best things to happen in the React world. Once upon a time, to get a React app working we had to spend days/weeks learning the tooling just to get it up and running. Now it takes 4 simple steps 
+The __Create React App CLI tool__ is one of the best things to happen in the React world. Once upon a time, to get a React app working we had to spend days/weeks learning the tooling just to get it up and running. Now it takes 4 simple steps 
 
 ```bash 
 1. npm install -g create-react-app (we might need to run 'sudo npm install -g create-react-app')
@@ -54,7 +54,7 @@ hello-world
     └── registerServiceWorker.js
 ```
 
-A couple things to note, all of our code should stay inside of the /src folder. A typical React application is set up like this, but varies depending on the company using them. 
+A couple things to note, all of our code should stay inside of the `./src` folder. A typical React application is set up like this, but varies depending on the company using them. 
 
 ```
 
@@ -118,7 +118,7 @@ REACT_APP_FAVORITE_COLOR=blue
 
 Since these are environment variables, we do have to shut down the React server and restart it to access it in our code. Lets shut down the server and restart it using `npm start` then go into our App.js file and change the code to look like this. 
 
-```javascript 
+```jsx
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
